@@ -11,7 +11,7 @@ npm install --save ws
 
 #3.add parcel into the project
 npm install parcel-bundler --save-dev
-# and other need same
+and other need same
 
 
 4. 進到chattrboc 運行
