@@ -1,0 +1,33 @@
+{
+  "name": "chattrbox-HW7-ver2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "parcel build app/scripts/src/main.js -d app/scripts/dist/main.js",
+    "watch": "parcel watch app/scripts/src/main.js -d app/scripts/dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david810376/chattrbox-HW7-ver2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david810376/chattrbox-HW7-ver2/issues"
+  },
+  "homepage": "https://github.com/david810376/chattrbox-HW7-ver2#readme",
+  "devDependencies": {
+    "core-js": "^3.7.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "ws": "^7.4.0"
+  }
+}
