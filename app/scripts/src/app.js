@@ -16,21 +16,21 @@ if(!username){
 
 class ChatApp{
     constructor(){
-        this.ChatForm = new ChatForm(FORM_SELECTOR , INPUT_SELECTOR);
-        this.ChatList = new ChatList(LIST_SELECTOR, username);
+        this.chatForm = new ChatForm(FORM_SELECTOR , INPUT_SELECTOR);
+        this.chatList = new ChatList(LIST_SELECTOR, username);
 
         socket.init('ws://localhost:3001');
         socket.registerOpenHandler(()=>{
-            this.ChatForm.init((data)=>{
+            this.chatForm.init((data)=>{
                 let message = new ChatMessage({message: data});
                 socket.sendMessage(message.serialize());
             });
-            this.ChatList.init();
+            this.chatList.init();
         });
         socket.registerMessageHandler((data)=>{
             console.log(data);
             let message = new ChatMessage(data);
-            this.ChatList.drawMessage(message.serialize());
+            this.chatList.drawMessage(message.serialize());
         });
     }
 }
