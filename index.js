@@ -10,7 +10,7 @@ var handleError =  function(err, res) {
     console.log("handling error");
 
     res.writeHead(404);
-    res.write("404 File not found");
+    //res.write("404 File not found");
     res.end();
 };
 
@@ -22,7 +22,9 @@ var server = http.createServer(function (req, res) {
         if (err) {  
             handleError(err, res);   
             return;
-        } else { res.end(data); }
+        } else { 
+            res.end(data); 
+        }
     });
 });
 
