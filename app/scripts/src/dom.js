@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import md5 from 'crypto-js/md5';
 import moment from 'moment';
-import { construct } from 'core-js/fn/reflect';
+//import { construct } from 'core-js/fn/reflect';
 
 function createGravatarUrl(username) {
     let userhash = md5(username);
