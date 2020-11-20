@@ -1,0 +1,52 @@
+{
+  "name": "chattrbox-HW7-ver2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "parcel build app/scripts/src/main.js -d app/scripts/dist" ,
+    "watch": "parcel watch app/scripts/src/main.js -d app/scripts/dist"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ],
+          "sourceMap": true
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david810376/chattrbox-HW7-ver2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david810376/chattrbox-HW7-ver2/issues"
+  },
+  "homepage": "https://github.com/david810376/chattrbox-HW7-ver2#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "core-js": "^3.7.0",
+    "crypto-js": "^4.0.0",
+    "moment": "^2.29.1",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
+    "watchify": "^3.11.1"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.6",
+    "ws": "^7.4.0"
+  }
+}
