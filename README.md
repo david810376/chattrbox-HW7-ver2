@@ -3,7 +3,7 @@
 install step:
 
 1.  install parcel
-npm install -g parcel-bundler
+``npm install -g parcel-bundler``
 2.  create package.json
 ``npm init -y``
 
