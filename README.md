@@ -2,9 +2,9 @@
 
 install step:
 
-1.install parcel
+1.  install parcel
 npm install -g parcel-bundler
-2.create package.json
+2.  create package.json
 npm init -y
 
 npm install --save ws
